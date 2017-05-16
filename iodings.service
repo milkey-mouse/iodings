@@ -1,0 +1,10 @@
+[Unit]
+Description=Internet of Dings IOT-ifier
+After=network.target
+
+[Service]
+ExecStart=EXECUTABLE_PATH --config=CONFIG_PATH
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

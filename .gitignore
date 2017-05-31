@@ -1,0 +1,5 @@
+iodings
+core
+*.o
+*.a
+*.out

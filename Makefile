@@ -1,7 +1,7 @@
 TARGET = iodings
-LIBS = -lm
+LIBS = -lm -lsndfile -lfftw3 -lportaudio
 CC = gcc
-CFLAGS = -g -O3 -Wall -std=c99
+CFLAGS = -g -O3 -Wall -std=c99 -D_POSIX_C_SOURCE=200809L
 PREFIX = /usr/local
 CONFIG_PATH = /etc/$(TARGET).json
 
